@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!--
+    1.Zmiana Layoutu na liniowy
+    2.Dodanie orientacji - "vertical"
+    3.Ustawienie gravity jako "center", aby wszystko było wycentrowane
+     -->
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"/>
+
+    <!--
+    4.Dodanie Chronometru - zegaru
+    5.Ustawienie wielkości jako "wrap_content" tzn. ma być wystarczająco wielki aby pomieścić zawartość
+    6.Zwiększenie wielkości textu poprzez dodanie wartości textSize
+    -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:onClick="startChronometer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:onClick="pauseChronometer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="resetChronometer" />
+
+    <!--
+7.Dodanie 3 przycisków - Button
+8.Ustawienie ich wielkości (patrz punkt 5 komentarzy)
+9.Nadanie nazwy przyciskom - "Start", "Pause", "Reset".
+10.Dodanie atrybutu "onClick" odwołującego się do odpowiadającej przyciskowi metody
+-->
+
+
+</LinearLayout>
